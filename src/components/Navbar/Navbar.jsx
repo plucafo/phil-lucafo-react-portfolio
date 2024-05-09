@@ -13,6 +13,13 @@ export const Navbar = () => {
     setMenuOpen(false);
   };
 
+  const links = [
+    { href: "#about", text: "About" },
+    { href: "#portfolio", text: "Portfolio" },
+    { href: "#contact", text: "Contact" },
+    { href: "#resume", text: "Resume" },
+  ];
+
   return (
     <nav className={styles.navbar}>
       <a className={styles.title} href="/">
@@ -32,42 +39,17 @@ export const Navbar = () => {
         <ul
           className={`${styles.menuItems} ${menuOpen ? styles.menuOpen : ""}`}
         >
-          <li>
-            <a
-              href="#about"
-              className={activeLink === "#about" ? styles.active : ""}
-              onClick={(e) => handleLinkClick(e, "#about")}
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="#portfolio"
-              className={activeLink === "#portfolio" ? styles.active : ""}
-              onClick={(e) => handleLinkClick(e, "#portfolio")}
-            >
-              Portfolio
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className={activeLink === "#contact" ? styles.active : ""}
-              onClick={(e) => handleLinkClick(e, "#contact")}
-            >
-              Contact
-            </a>
-          </li>
-          <li>
-            <a
-              href="#resume"
-              className={activeLink === "#resume" ? styles.active : ""}
-              onClick={(e) => handleLinkClick(e, "#resume")}
-            >
-              Resume
-            </a>
-          </li>
+          {links.map((link) => (
+            <li key={link.href}>
+              <a
+                href={link.href}
+                className={activeLink === link.href ? styles.active : ""}
+                onClick={(e) => handleLinkClick(e, link.href)}
+              >
+                {link.text}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
