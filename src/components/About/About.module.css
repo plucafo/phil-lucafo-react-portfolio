@@ -3,4 +3,5 @@
 .about {
     padding: 20px;
     font-family: var(--font-roboto);
+    /* height: 83vh; */
 }
