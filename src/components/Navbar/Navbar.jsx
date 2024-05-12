@@ -16,10 +16,10 @@ export const Navbar = () => {
   };
 
   const links = [
-    { href: "#about", text: "About" },
-    { href: "#portfolio", text: "Portfolio" },
-    { href: "#contact", text: "Contact" },
-    { href: "#resume", text: "Resume" },
+    { href: "/", text: "About" },
+    { href: "/portfolio", text: "Portfolio" },
+    { href: "/contact", text: "Contact" },
+    { href: "/resume", text: "Resume" },
   ];
 
   return (
@@ -43,13 +43,13 @@ export const Navbar = () => {
         >
           {links.map((link) => (
             <li key={link.href}>
-              <a
-                href={link.href}
+              <Link
+                to={link.href}
                 className={activeLink === link.href ? styles.active : ""}
                 onClick={(e) => handleLinkClick(e, link.href)}
               >
                 {link.text}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

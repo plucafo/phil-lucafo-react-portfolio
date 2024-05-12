@@ -10,7 +10,7 @@ function App() {
     <div className={styles.container}>
       <Navbar />
       <div className={styles.content}>
-        <About />
+        <Outlet />
       </div>
       <Footer />
     </div>
