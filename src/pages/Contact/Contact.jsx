@@ -36,11 +36,11 @@ export const Contact = () => {
   
       console.log("Submitted Values:", { name, email, message });
       
-      setIsModalOpen(true); // Open the modal on successful submission
+      setIsModalOpen(true); 
     };
   
     const closeModal = () => {
-      setIsModalOpen(false); // Close the modal
+      setIsModalOpen(false); 
       setName("");
       setEmail("");
       setMessage("");
@@ -70,6 +70,7 @@ export const Contact = () => {
             onChange={handleInputChange}
             type="text"
             placeholder="message"
+            rows={5}
           />
           <button type="submit">Submit</button>
         </form>

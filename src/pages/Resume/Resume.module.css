@@ -1,0 +1,21 @@
+@import "../../vars.css";
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 0 120px;
+}
+
+.resume h1 {
+    margin-top: 40px;
+}
+
+.resume h2 {
+    padding: 20px 0 10px 0;
+}
+
+.resume ul {
+    padding-left: 30px;
+}
