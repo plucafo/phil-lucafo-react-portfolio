@@ -1,8 +1,7 @@
-export const Portfolio = () => {
+import React, { useState } from "react";
 
-    return (
-        <h1>Portfolio Page</h1>
-    );
+import PortfolioCard from "../../components/Card/PortfolioCard";
+
+export default function Portfolio() {
+  return <PortfolioCard />;
 }
-
-export default Portfolio;
