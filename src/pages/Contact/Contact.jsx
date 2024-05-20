@@ -6,7 +6,7 @@ export const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-    const [isModalOpen, setIsModalOpen] = useState(false); // State to control modal visibility
+    const [isModalOpen, setIsModalOpen] = useState(false);
   
     const handleInputChange = (event) => {
       const { name, value } = event.target;
