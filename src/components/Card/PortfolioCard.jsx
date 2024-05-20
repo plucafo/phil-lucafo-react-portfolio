@@ -10,17 +10,18 @@ import Typography from '@mui/material/Typography';
 import { useNavigate } from "react-router-dom";
 
 
-export default function PortfolioCard({ title, description, repoUrl, demoUrl }) {
+export default function PortfolioCard({ title, description, repoUrl, demoUrl, cardImg }) {
   function handleNavigation(url) {
     window.open(url, '_blank');
   }
   return (
-    <Card sx={{ mx: 'auto', my: 'auto' }}>
+    <Card sx={{ mx: 'auto', my: 'auto' }} raised>
       <CardMedia
         component="img"
-        alt="green iguana"
-        height="140"
-        image="https://placehold.co/600x400"
+        alt="project image"
+        height="340"
+        image={cardImg}
+        sx={{ padding: "1em 1em 0 1em", objectFit: "contain"}}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -31,8 +32,8 @@ export default function PortfolioCard({ title, description, repoUrl, demoUrl }) 
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" onClick={() => handleNavigation(repoUrl)}>Share</Button>
-        <Button size="small" onClick={() => handleNavigation(demoUrl)}>Learn More</Button>
+        <Button size="small" onClick={() => handleNavigation(repoUrl)}>Github</Button>
+        <Button size="small" onClick={() => handleNavigation(demoUrl)}>Live Demo</Button>
       </CardActions>
     </Card>
   );
