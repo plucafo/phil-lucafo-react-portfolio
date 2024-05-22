@@ -6,15 +6,6 @@ import { About } from "./pages/About/About";
 import { Footer } from "./components/Footer/Footer";
 
 function App() {
-  // const foo = "bar";
-  // const [data, setData] = React.useState("");
-
-  // React.useEffect(() => {
-  //   setData("BALLSSSS");
-  //   fetch().then((res) => {
-  //     setData(res.body);
-  //   });
-  // }, []);
 
   return (
     <div className={styles.container}>
