@@ -7,9 +7,15 @@
     padding: 12px;
     background-color: var(--color-bg);
     color: white;
+    
 }
 
 .footer {
   font-family: var(--font-roboto);
   text-align: center;
+  
+}
+
+.footer img {
+  margin: 0 10px;
 }

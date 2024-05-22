@@ -1,5 +1,5 @@
 import styles from "./Resume.module.css";
-
+import resumePdf from "../../assets/contact/resume.pdf";
 
 export const Resume = () => {
 
@@ -7,7 +7,7 @@ export const Resume = () => {
         <>
         <div className={styles.resume}>
         <h1>Resume</h1>
-        <a href="#">Download My Resume</a>
+        <a href={resumePdf} download="Phil_Lucafo_Resume.pdf" className={styles.downloadLink}> Download my Resume</a>
         <h2>Front-end Proficiencies</h2>
         <ul>
             <li>HTML</li>
