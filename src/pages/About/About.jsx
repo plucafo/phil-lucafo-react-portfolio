@@ -1,4 +1,5 @@
 import styles from "./About.module.css";
+import profileImage from '../../assets/hero/plucafo2.png';
 
 export const About = () => {
   return (
@@ -6,7 +7,7 @@ export const About = () => {
       <div className={styles.about}>
         <h2 className={styles.about}>About Me</h2>
         <img
-          src="../../assets/hero/plucafo2.png"
+          src={profileImage}
           alt="Profile image"
           className={styles.image}
         />
