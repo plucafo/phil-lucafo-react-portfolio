@@ -33,6 +33,11 @@ export const Contact = () => {
         alert("Please enter a valid email address.");
         return;
       }
+      
+      if (!message) {
+        alert("You must enter a message.");
+        return;
+      }
   
       console.log("Submitted Values:", { name, email, message });
       
