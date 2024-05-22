@@ -12,18 +12,13 @@ export const About = () => {
           className={styles.image}
         />
         <p className={styles.about}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-          possimus tempora tempore voluptatibus quod suscipit rem, harum
-          dignissimos perspiciatis fugiat consequatur vitae deleniti adipisci
-          explicabo asperiores modi cumque ab itaque iure blanditiis placeat
-          officia corrupti architecto! Vitae, quod placeat? Iste nulla sint
-          dolorem optio praesentium, vel aliquid sunt, fuga dolore, ab
-          repudiandae minus nostrum. Molestiae rerum officiis consequatur,
-          voluptatem pariatur quae maiores ad incidunt ab quasi eius deserunt
-          quidem esse ipsam, sunt eaque illo, ullam cum rem iure! Placeat ipsa
-          repellat delectus aliquam, cumque aliquid alias, quae esse ut
-          obcaecati vel reiciendis sint laboriosam atque impedit aspernatur
-          totam, hic exercitationem.
+        Hello! I'm Phil Lucafo, a dedicated junior developer with a fervent passion for problem-solving and crafting user-friendly digital experiences. With a solid foundation in HTML, CSS, and JavaScript, I continually strive to expand my skill set and stay updated with the latest industry trends. My journey in web development has been driven by a love for creating intuitive, efficient, and visually appealing web applications that make a difference.
+<br />
+<br />
+I take pride in my ability to tackle complex challenges head-on and transform innovative ideas into functional, user-centric solutions. Whether it's collaborating with a dynamic team or working independently, my goal is to deliver high-quality work that exceeds expectations. My enthusiasm for learning and growth fuels my desire to contribute to cutting-edge projects that push the boundaries of technology.
+<br />
+<br />
+Let's build something amazing together! Explore my portfolio to see the projects I've worked on, and feel free to connect with me for exciting opportunities and collaborations. I'm excited to bring my skills and creativity to your next project and make a meaningful impact in the tech world.
         </p>
       </div>
     </>
