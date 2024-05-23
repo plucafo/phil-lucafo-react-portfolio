@@ -13,7 +13,7 @@ export const Navbar = () => {
   const handleLinkClick = (event, link) => {
     event.preventDefault;
     setActiveLink(link);
-    console.log("Active link set to:", link);
+    console.log("Active link set to:", link); // testing
     setMenuOpen(false);
   };
 

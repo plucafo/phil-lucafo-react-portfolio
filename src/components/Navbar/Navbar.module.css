@@ -38,7 +38,25 @@
 }
 
 .active {
-    text-decoration: underline !important;
+    position: relative;
+    color: var(--color-text);
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 2px;
+    width: 0; /* Initial width */
+    background-color: var(--color-text);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.menuItems a:hover::after,
+.active::after {
+    width: 80%; /* Final width */
 }
 
 @media screen and (max-width: 830px) {
